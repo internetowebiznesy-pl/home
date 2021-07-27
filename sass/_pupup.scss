@@ -1,0 +1,101 @@
+.pup{
+    background-color: #fff;
+    @include flex();
+    justify-content: space-between;
+    padding: $margin-pupup;
+    z-index: 100;
+    height: $height-nav;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.logo_nav_box{
+    @include flexCenter();  
+    
+}
+.logo_nav{
+    @include flexCenter();
+}
+
+.logo_h1{
+    height: 100%;
+    @include flex();
+    align-items: flex-end;
+    padding: $margin-pupup 0;
+}
+.h1_nav{
+    font-family: lato300;
+    font-size: 24px;
+   
+    line-height: 100%;
+    margin-left: 10px;
+    align-items: flex-end;
+}
+.mobile_nav{
+    display: none;
+}
+
+.mobile_nav.show{
+    display: block;
+}
+
+.logo{
+    width: $size-logo;
+}
+
+.burger_box{
+    width: $size-burger;
+}
+.menu{
+    padding: $margin-pupup;
+    width: $size-logo;
+    height: $size-logo;
+    position: relative;
+    
+}
+.burger_btn_on,
+.burger_btn_off{
+    display: none;
+}
+.burger_btn_on.show,
+.burger_btn_off.show{
+    display: block;
+    position: fixed;
+    top: $margin-burger-btn;
+    right: $margin-burger-btn;
+    z-index: 101;
+    width: $size-burger;
+    height: $size-burger;
+}
+
+
+.burger_btn_on,
+.burger_btn_off{
+    padding: $margin-pupup;
+}
+.filter_pupup_box{
+    background-color: $filter-color;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    
+    .filter_pupup{
+        background-color: #fff;
+        width: 80%;
+        height: 100%;
+        @include flexCenter();
+        @include flexColumn();
+        margin-left: auto;
+    }
+}
+
+.link{
+    font-family: lato300;
+	color:#000;
+    padding: 12px;
+    margin: 12px;
+    text-align: center;
+}
