@@ -105,9 +105,6 @@ input[type=submit] {
 .buttonSendBorder {
   width: 122px; }
 
-.block {
-  font-weight: bold; }
-
 .padding_RL {
   padding-right: 15px;
   padding-left: 15px; }
@@ -121,6 +118,7 @@ input[type=submit] {
   letter-spacing: 3px;
   word-spacing: 6px;
   font-family: lato400;
+  font-weight: bold;
   line-height: 36px; }
 
 .h2_sections {
@@ -131,10 +129,10 @@ input[type=submit] {
   font-weight: bold;
   margin-top: 16px; }
 
-.h4_sections {
+.h4_strategy {
   margin-top: 16px;
   font-size: 18px;
-  font-weight: 700; }
+  font-weight: 400; }
 
 .h4_mission {
   font-size: 14px;
@@ -174,7 +172,8 @@ input[type=submit] {
 .button_inSite {
   margin-bottom: 30px; }
 
-input {
+input,
+textarea {
   border-radius: 0; }
 
 input[type="submit"] {
@@ -361,6 +360,19 @@ header::before {
   font-size: 11px;
   letter-spacing: 2px;
   font-family: lato700; }
+
+.strategy {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .about {
   padding-left: 0;

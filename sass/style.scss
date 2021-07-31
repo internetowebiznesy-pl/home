@@ -38,11 +38,13 @@ header::before{
 
 
 
-// SECTIONS !!!!!!!!!!!!!!!!!!!!!!!!!!! SECTIONS !!!!!!!!!!!!!!!!
+// strategy !!!!!!!!!!!!!!!!!!!!!!!!!!! strategy!!!!!!!!!!!!!!!!
 
-// .strategy{
-//     padding-bottom: 10px;
-// }
+.strategy{
+    height: 100vh;
+    @include flexColumn();
+    justify-content: center;
+}
 
 
 
