@@ -14,18 +14,6 @@
   background-position: center;
   background-repeat: no-repeat; }
 
-@font-face {
-  font-family: lato300;
-  src: url("../font/lato-Light.ttf"); }
-
-@font-face {
-  font-family: lato400;
-  src: url("../font/lato-Regular.ttf"); }
-
-@font-face {
-  font-family: lato700;
-  src: url("../font/lato-bold.ttf"); }
-
 body {
   font-family: 'Raleway';
   font-weight: 300;
@@ -37,6 +25,9 @@ h1, h2, h3, h4, h5, h6 {
 strong {
   font-weight: normal; }
 
+.bold {
+  font-weight: 700; }
+
 img {
   display: block;
   width: 100%; }
@@ -47,7 +38,7 @@ ul {
 a {
   display: block;
   text-decoration: none;
-  font-family: lato300;
+  font-family: lato;
   color: #fff; }
 
 .block {
@@ -117,13 +108,13 @@ input[type=submit] {
   font-size: 24px;
   letter-spacing: 3px;
   word-spacing: 6px;
-  font-family: lato400;
-  font-weight: bold;
+  font-family: lato;
+  font-weight: 700;
   line-height: 36px; }
 
 .h2_sections {
   color: #f58220;
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 3px;
   word-spacing: 6px;
   font-weight: bold;
@@ -141,7 +132,7 @@ input[type=submit] {
 .mission_h5 {
   font-size: 12px;
   color: #fff;
-  font-family: lato400;
+  font-family: lato;
   line-height: 16px; }
 
 .p_sections {
@@ -232,7 +223,7 @@ input[type="submit"] {
   padding: 5px 0; }
 
 .h1_nav {
-  font-family: lato300;
+  font-family: lato;
   font-size: 24px;
   line-height: 100%;
   margin-left: 10px;
@@ -304,13 +295,13 @@ input[type="submit"] {
     margin-left: auto; }
 
 .link {
-  font-family: lato300;
+  font-family: lato;
   color: #000;
   padding: 12px;
   margin: 12px;
   text-align: center; }
 
-section {
+article {
   min-height: 100vh;
   padding-top: 50px; }
 
@@ -319,7 +310,7 @@ header {
   padding: 30px 0;
   height: 205px;
   color: #fff;
-  font-family: lato300;
+  font-family: lato;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,20 +350,11 @@ header::before {
 .h2-header {
   font-size: 11px;
   letter-spacing: 2px;
-  font-family: lato700; }
+  font-family: lato;
+  font-weight: 700; }
 
 .strategy {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  padding: 60px 15px; }
 
 .about {
   padding-left: 0;
@@ -401,9 +383,6 @@ header::before {
   color: #fff;
   padding: 20px 0;
   font-family: lato; }
-
-.contact {
-  padding: 0; }
 
 .contactL {
   background-color: rgba(0, 0, 0, 0.1);

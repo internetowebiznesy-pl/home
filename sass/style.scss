@@ -4,10 +4,12 @@
 @import 'mediaQuery';
 @import 'pupup';
 
-section{
+article{
     min-height: 100vh;
     padding-top: $height-nav;
 }
+
+
 
 
 // HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!! HEADER !!!!!!!!!!!!!!!!
@@ -16,7 +18,7 @@ header{
     padding: 30px 0;
     height: 205px;
     color: #fff;
-    font-family: lato300;
+    font-family: lato;
     @include flexCenterColumn();
     justify-content: space-around;
 }
@@ -33,7 +35,8 @@ header::before{
 .h2-header{
     font-size: 11px;
     letter-spacing: 2px;    
-    font-family: lato700;
+    font-family: lato;
+    font-weight: 700;
 }
 
 
@@ -41,9 +44,10 @@ header::before{
 // strategy !!!!!!!!!!!!!!!!!!!!!!!!!!! strategy!!!!!!!!!!!!!!!!
 
 .strategy{
-    height: 100vh;
-    @include flexColumn();
-    justify-content: center;
+    // height: 100vh;
+    // @include flexColumn();
+    // justify-content: center;
+    padding: 60px $pading_RL_in;
 }
 
 
@@ -81,9 +85,9 @@ header::before{
 }
 
 // CONTACTS !!!!!!!!!!!!!!!!!!!!!!!!!!! CONTACTS !!!!!!!!!!!!!!!!
-.contact{
-    padding: 0;
-}
+// .contact{
+//     padding: 0;
+// }
 
 .contactL{
     background-color: rgba(0,0,0,.1);
