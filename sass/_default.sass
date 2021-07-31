@@ -67,13 +67,13 @@ header::before,
     // background: red
     z-index: -1
 
-.button
+.button,
+input[type=submit]
     background-color: $color-logo
     @include flexCenter()
     text-align: center
 
 .button::before
-    
     border: 1px solid $color-logoB
     background-color: rgba(255,255,255, .05)
     transition: .3s
@@ -92,40 +92,62 @@ header::before,
     left: -3px
 
 .button.a-header,
-.button.a-sections
+.a-sections,
+.button
     width: 166px
     height: 34px
     
-
+.buttonSendBorder
+    width: 122px
 
 // SECTIONS !!!!!!!!!!!!!!!!!!!!!!!!!!! SECTIONS !!!!!!!!!!!!!!!!
+.block
+    font-weight: bold
+
+.padding_RL
+    padding-right: $pading_RL_in
+    padding-left: $pading_RL_in
+
 .sections
-    padding: 0 15px
+    // padding: 0 15px
     // padding-top: calc( $height-nav +10px )
     @include sectionsPaddingTop()
 
 .h1_sections
     text-transform: uppercase
-    font-size: 26px  
-    letter-spacing: 3px
-    word-spacing: 6px 
-    font-weight: bold
+    font-size: 24px  
+    letter-spacing: $letterSpaccing
+    word-spacing: $wordSpacing
+    font-family: lato400
+    line-height: 36px
 
 .h2_sections
     color: $color-logo
-    font-size: 12px 
-    letter-spacing: 3px 
+    font-size: $font_Size_H2_Sections 
+    letter-spacing: $letterSpaccing
+    word-spacing: $wordSpacing
     font-weight: bold
-    margin-top: 16px
+    margin-top: $margin-top-text
+    
 
 .h4_sections
-    margin-top: 16px
+    margin-top: $margin-top-text
     font-size: 18px
     font-weight: 700
 
+.h4_mission
+    font-size: 14px
+    letter-spacing: $letterSpaccing
+
+.mission_h5
+    font-size: 12px
+    color: #fff
+    font-family: lato400
+    line-height: 16px
+    
 .p_sections
     font-size: 14px
-    line-height: 28px
+    line-height: $lineHeightText
     font-weight: 400
     // margin-top: 28px
 
@@ -150,10 +172,13 @@ header::before,
     left: -10px
     margin-left: auto
 
-// .button_inSite
-//     margin-bottom: 20px
+.button_inSite
+    margin-bottom: 30px
 
 .sections
     .p_first,
     .button
-        margin-top: 16px
+        margin-top: $margin-top-text
+
+// CONTACTS !!!!!!!!!!!!!!!!!!!!!!!!!!! CONTACTS !!!!!!!!!!!!!!!!
+

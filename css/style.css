@@ -67,7 +67,8 @@ header::before,
   left: 0;
   z-index: -1; }
 
-.button {
+.button,
+input[type=submit] {
   background-color: #f58220;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,25 +97,37 @@ header::before,
   left: -3px; }
 
 .button.a-header,
-.button.a-sections {
+.a-sections,
+.button {
   width: 166px;
   height: 34px; }
 
+.buttonSendBorder {
+  width: 122px; }
+
+.block {
+  font-weight: bold; }
+
+.padding_RL {
+  padding-right: 15px;
+  padding-left: 15px; }
+
 .sections {
-  padding: 0 15px;
   padding-top: 60px; }
 
 .h1_sections {
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 3px;
   word-spacing: 6px;
-  font-weight: bold; }
+  font-family: lato400;
+  line-height: 36px; }
 
 .h2_sections {
   color: #f58220;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 3px;
+  word-spacing: 6px;
   font-weight: bold;
   margin-top: 16px; }
 
@@ -123,9 +136,19 @@ header::before,
   font-size: 18px;
   font-weight: 700; }
 
+.h4_mission {
+  font-size: 14px;
+  letter-spacing: 3px; }
+
+.mission_h5 {
+  font-size: 12px;
+  color: #fff;
+  font-family: lato400;
+  line-height: 16px; }
+
 .p_sections {
   font-size: 14px;
-  line-height: 28px;
+  line-height: 24px;
   font-weight: 400; }
 
 .ul_sections {
@@ -147,6 +170,9 @@ header::before,
   top: 10px;
   left: -10px;
   margin-left: auto; }
+
+.button_inSite {
+  margin-bottom: 30px; }
 
 .sections .p_first,
 .sections .button {
@@ -330,8 +356,68 @@ header::before {
   letter-spacing: 2px;
   font-family: lato700; }
 
-.strategy {
-  padding-bottom: 10px; }
+.about {
+  padding-left: 0;
+  padding-right: 0; }
+
+.mission {
+  background-image: url("../img/320/internetowy-biznes-tworzenie-stron-internetowych-about.jpg");
+  margin-top: 16px;
+  height: 226px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  color: #fff;
+  padding: 20px 0;
+  font-family: lato; }
+
+.contact {
+  padding: 0; }
+
+.contactL {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 16px; }
+
+.label_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 16px; }
+
+label {
+  font-size: 10px;
+  font-weight: 400;
+  color: #000;
+  line-height: 100%; }
+
+.input_contact {
+  padding: 5px 3px;
+  border: 1px solid rgba(0, 0, 0, 0.3); }
+
+input[type=submit] {
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: #fff; }
 
 @media only screen and (min-width: 960px) {
   .pup,
