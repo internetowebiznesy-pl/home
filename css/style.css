@@ -385,7 +385,7 @@ header::before {
   right: 0px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-size: 100%;
+  background-size: 80%;
   opacity: .2; }
 
 .p_box_strategy_marketing::before {

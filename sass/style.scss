@@ -53,8 +53,9 @@ header::before{
 .p_box::before{
     top:50%;
     right: 0px;
+    
     transform: translateY(-50%);
-    background-size: 100%;
+    background-size: 80%;
     opacity: .2;
 }
 .p_box_strategy_marketing::before{
