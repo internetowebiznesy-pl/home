@@ -52,12 +52,15 @@ a {
   color: #f58220; }
 
 header,
-.button {
+.button,
+.p_box {
   position: relative; }
 
 header::before,
-.button::before {
+.button::before,
+.p_box::before {
   position: absolute;
+  display: block;
   content: '';
   width: 100%;
   height: 100%;
@@ -114,7 +117,7 @@ input[type=submit] {
   text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 1px;
-  word-spacing: 4px;
+  word-spacing: 2px;
   font-family: lato;
   font-weight: 700;
   line-height: 36px;
@@ -123,7 +126,7 @@ input[type=submit] {
 .h2_sections {
   font-size: 18px;
   letter-spacing: 1px;
-  word-spacing: 4px;
+  word-spacing: 2px;
   font-weight: bold;
   margin-top: 16px;
   text-transform: uppercase;
@@ -376,6 +379,23 @@ header::before {
 
 .strategy {
   padding: 10px 15px; }
+
+.p_box::before {
+  top: 50%;
+  right: 0px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-size: 100%;
+  opacity: .2; }
+
+.p_box_strategy_marketing::before {
+  background-image: url("../img/icons/strategie/strategia_marketingowa.png"); }
+
+.p_box_strategy_mark::before {
+  background-image: url("../img/icons/strategie/strategia_marki.png"); }
+
+.p_box_strategy_biznes::before {
+  background-image: url("../img/icons/strategie/strategia_biznesowa.png"); }
 
 .about {
   padding-left: 0;

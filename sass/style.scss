@@ -50,7 +50,27 @@ header::before{
     padding: 10px $pading_RL_in;
 }
 
+.p_box::before{
+    top:50%;
+    right: 0px;
+    transform: translateY(-50%);
+    background-size: 100%;
+    opacity: .2;
+}
+.p_box_strategy_marketing::before{
+    background-image: url('../img/icons/strategie/strategia_marketingowa.png');
+    
+}
 
+.p_box_strategy_mark::before{
+    background-image: url('../img/icons/strategie/strategia_marki.png');
+    
+}
+
+.p_box_strategy_biznes::before{
+    background-image: url('../img/icons/strategie/strategia_biznesowa.png');
+    
+}
 
 
 
