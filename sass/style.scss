@@ -47,7 +47,7 @@ header::before{
     // height: 100vh;
     // @include flexColumn();
     // justify-content: center;
-    padding: 60px $pading_RL_in;
+    padding: 10px $pading_RL_in;
 }
 
 
@@ -126,6 +126,47 @@ input[type=submit]{
 
 
 
+// FOOTER !!!!!!!!!!!!!!!!!!!!!!!!!!! FOOTER !!!!!!!!!!!!!!!!
+.footer{
+    background-color: $color-logoB;
+    padding: 30px $pading_RL_in;
+    color: #fff;
+    font-family: lato;
+}
+
+.footer ul{
+    @include flexCenter();
+}
+
+.footer li{
+    margin: auto;
+}
+
+.footer_socials{
+    color: $color-logo;
+    @include flex();
+    justify-content: flex-end;
+}
+
+.footer_socials a{
+    width: 22px;
+    margin: 5px;
+}
+
+
+.links_footer{
+    font-size: 11px;
+    padding: 10px;
+    font-weight: bold;
+    // width: 60px;
+}
+.footer_info{
+    font-size: 8px;
+    text-align: center;
+}
+.link_footer{
+    display: inline;
+}
 
 @include media(w960){
     .pup,

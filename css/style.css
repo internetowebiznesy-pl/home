@@ -170,9 +170,11 @@ textarea {
 input[type="submit"] {
   -webkit-appearance: none; }
 
-.sections .p_first,
-.sections .button {
+.sections .p_first {
   margin-top: 16px; }
+
+.sections .button {
+  margin-top: 24px; }
 
 .pup {
   background-color: #fff;
@@ -354,7 +356,7 @@ header::before {
   font-weight: 700; }
 
 .strategy {
-  padding: 60px 15px; }
+  padding: 10px 15px; }
 
 .about {
   padding-left: 0;
@@ -415,6 +417,51 @@ input[type=submit] {
   height: 100%;
   border: none;
   color: #fff; }
+
+.footer {
+  background-color: #233d4b;
+  padding: 30px 15px;
+  color: #fff;
+  font-family: lato; }
+
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.footer li {
+  margin: auto; }
+
+.footer_socials {
+  color: #f58220;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.footer_socials a {
+  width: 22px;
+  margin: 5px; }
+
+.links_footer {
+  font-size: 11px;
+  padding: 10px;
+  font-weight: bold; }
+
+.footer_info {
+  font-size: 8px;
+  text-align: center; }
+
+.link_footer {
+  display: inline; }
 
 @media only screen and (min-width: 960px) {
   .pup,
