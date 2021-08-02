@@ -1,0 +1,9 @@
+.info_graphic_box{
+    padding: $pading_RL_in;
+}
+
+.info_graphic_elements{
+    @include flex();
+    margin: 30px 0;
+}
+

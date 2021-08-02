@@ -32,6 +32,9 @@ img {
   display: block;
   width: 100%; }
 
+.img_icons {
+  width: 50px; }
+
 ul {
   list-style-type: none; }
 
@@ -120,10 +123,20 @@ input[type=submit] {
   font-weight: bold;
   margin-top: 16px; }
 
-.h4_strategy {
+.h3_info_graphic {
   margin-top: 16px;
   font-size: 18px;
   font-weight: 400; }
+
+.h3_info_graphic {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px; }
+
+.h4_info_graphic {
+  margin-left: 15px;
+  font-size: 11px;
+  font-weight: bold; }
 
 .h4_mission {
   font-size: 14px;
@@ -462,6 +475,15 @@ input[type=submit] {
 
 .link_footer {
   display: inline; }
+
+.info_graphic_box {
+  padding: 15px; }
+
+.info_graphic_elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0; }
 
 @media only screen and (min-width: 960px) {
   .pup,
