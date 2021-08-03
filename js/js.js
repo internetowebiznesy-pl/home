@@ -1,4 +1,6 @@
 var pupup = document.querySelector('.filter_pupup_box');
+var rightPup = document.querySelector('.filter_pupup');
+
 var btn_burgerOn = document.querySelector('.burger_btn_on');
 var btn_burgerOff = document.querySelector('.burger_btn_off');
 var pupup_link_a1 = document.querySelector('.a1');
@@ -15,12 +17,14 @@ function wyzwalacz(){
        btn_burgerOn.classList.remove('show');
        btn_burgerOff.classList.add('show');
        pupup.classList.add('show');
+       rightPup.classList.add('show');
    });
   
    btn_burgerOff.addEventListener('click', function(){
         btn_burgerOn.classList.add('show');
         btn_burgerOff.classList.remove('show');
         pupup.classList.remove('show');
+        
    });
 
      pupup_link_a1.addEventListener('click', function(){

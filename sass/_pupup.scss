@@ -81,15 +81,34 @@
     height: 100%;
     top: 0;
     right: 0;
-    
-    .filter_pupup{
+    left: -100%;
+}  
+
+.filter_pupup{
         background-color: #fff;
+        position: fixed;
         width: 80%;
         height: 100%;
+        top: 0;
+        left: 100%;
         @include flexCenter();
         @include flexColumn();
         margin-left: auto;
     }
+
+@keyframes leftPup{
+    100%{left: 0%;}
+}
+
+.filter_pupup_box.show{
+    animation: leftPup .2s linear both;
+}
+
+@keyframes rightPup{
+    100%{left: 20%;}
+}
+.filter_pupup.show{
+    animation: rightPup .1s linear both;
 }
 
 .link{
