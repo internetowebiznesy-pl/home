@@ -42,11 +42,18 @@ header::before{
 .services,
 .projects{
     text-align: justify;
-    background-color: rgba(0,0,0,.05);
+    // background-color: rgba(0,0,0,.05);
 }
 
 .services{
     color: #fff;
+    
+    .button::before{
+        border-color: #fff;
+    }
+}
+
+.services::before{
     transform: translate3d(0,0,0);
     background-image: url('../img/test.jpg');
     background-attachment: fixed !important;
@@ -65,9 +72,6 @@ header::before{
     background-position: center center;
     text-align: center;
     overflow: auto;
-    .button::before{
-        border-color: #fff;
-    }
 }
 
 // strategy !!!!!!!!!!!!!!!!!!!!!!!!!!! strategy!!!!!!!!!!!!!!!!

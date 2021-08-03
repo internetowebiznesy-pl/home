@@ -57,11 +57,13 @@ a {
   color: #f58220; }
 
 header,
+.sections,
 .button,
 .p_box {
   position: relative; }
 
 header::before,
+.sections::before,
 .button::before,
 .p_box::before {
   position: absolute;
@@ -436,11 +438,14 @@ header::before {
 
 .services,
 .projects {
-  text-align: justify;
-  background-color: rgba(0, 0, 0, 0.05); }
+  text-align: justify; }
 
 .services {
-  color: #fff;
+  color: #fff; }
+  .services .button::before {
+    border-color: #fff; }
+
+.services::before {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   background-image: url("../img/test.jpg");
@@ -459,8 +464,6 @@ header::before {
   background-position: center center;
   text-align: center;
   overflow: auto; }
-  .services .button::before {
-    border-color: #fff; }
 
 .strategy:nth-of-type(1) {
   margin-top: 0; }
