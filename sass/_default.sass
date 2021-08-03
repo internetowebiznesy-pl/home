@@ -29,6 +29,7 @@ body
     font-family: 'Raleway'
     font-weight: 300
     line-height: 120%
+    
 
 h1, h2, h3, h4, h5, h6
     font-weight: 400
@@ -68,6 +69,7 @@ header,
 .p_box
     position: relative
 
+
 header::before,
 .button::before,
 .p_box::before
@@ -78,7 +80,6 @@ header::before,
     height: 100%
     top: 0
     left: 0
-    // background: red
     z-index: -1
 
 .button,
@@ -93,7 +94,7 @@ input[type=submit]
     background-color: rgba(0,0,0, .02)
     transition: .3s
 
-    .button.button-left::before
+.button.button-left::before
     top: 10px
     left: 10px
 
@@ -113,8 +114,9 @@ input[type=submit]
     top: 2px
     left: -3px
 
-.button_inSite
-    margin-bottom: 30px
+// .button_inSite,
+// .button
+//     margin-bottom: 30px
 
 
 // HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!! HEADER !!!!!!!!!!!!!!!!
@@ -152,6 +154,7 @@ input[type=submit]
     // padding: 0 15px
     // padding-top: calc( $height-nav +10px )
     @include sectionsPaddingTop()
+    @include sectionsPaddingBottom()
 
 .h1_sections
     text-transform: uppercase

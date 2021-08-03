@@ -39,6 +39,11 @@ header::before{
     font-weight: 700;
 }
 
+.services,
+.projects{
+    text-align: justify;
+    background-color: rgba(0,0,0,.05);
+}
 
 
 // strategy !!!!!!!!!!!!!!!!!!!!!!!!!!! strategy!!!!!!!!!!!!!!!!
@@ -48,6 +53,7 @@ header::before{
     // @include flexColumn();
     // justify-content: center;
     padding: 10px $pading_RL_in;
+    // overflow: hidden;
 }
 
 .p_box::before{
@@ -56,7 +62,7 @@ header::before{
     
     transform: translateY(-50%);
     background-size: 60%;
-    opacity: .1;
+    opacity: .15;
 }
 .p_box_strategy_marketing::before{
     background-image: url('../img/icons/strategie/strategia_marketingowa.png');
@@ -226,6 +232,16 @@ input[type=submit]{
 @include media(w480){
     .change_display{
         display: inline-block;
+    }
+    .p_box::before{
+        background-size: 50%;
+        // left: 20%;
+    }
+
+    $pading_RL_in: 45px;
+    .padding_RL{
+        padding-left: $pading_RL_in;
+        padding-right: $pading_RL_in;
     }
 }
 

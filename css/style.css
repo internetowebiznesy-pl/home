@@ -87,7 +87,9 @@ input[type=submit] {
   border: 1px solid #233d4b;
   background-color: rgba(0, 0, 0, 0.02);
   -webkit-transition: .3s;
-  transition: .3s;
+  transition: .3s; }
+
+.button.button-left::before {
   top: 10px;
   left: 10px; }
 
@@ -106,9 +108,6 @@ input[type=submit] {
 .button.button-right:hover::before {
   top: 2px;
   left: -3px; }
-
-.button_inSite {
-  margin-bottom: 30px; }
 
 .button.a-header::before {
   border: 1px solid #fff;
@@ -134,7 +133,8 @@ input[type=submit] {
   padding-left: 15px; }
 
 .sections {
-  padding-top: 60px; }
+  padding-top: 60px;
+  padding-bottom: 25px; }
 
 .h1_sections {
   text-transform: uppercase;
@@ -430,6 +430,11 @@ header::before {
   font-family: lato;
   font-weight: 700; }
 
+.services,
+.projects {
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.05); }
+
 .strategy {
   padding: 10px 15px; }
 
@@ -439,7 +444,7 @@ header::before {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-size: 60%;
-  opacity: .1; }
+  opacity: .15; }
 
 .p_box_strategy_marketing::before {
   background-image: url("../img/icons/strategie/strategia_marketingowa.png"); }
@@ -566,7 +571,12 @@ section.sections {
 
 @media only screen and (min-width: 480px) {
   .change_display {
-    display: inline-block; } }
+    display: inline-block; }
+  .p_box::before {
+    background-size: 50%; }
+  .padding_RL {
+    padding-left: 45px;
+    padding-right: 45px; } }
 
 @media only screen and (min-width: 568px) {
   .padding_RL {
