@@ -48,18 +48,21 @@ header::before{
 .services{
     color: #fff;
     transform: translate3d(0,0,0);
+    background-image: url('../img/test.jpg');
+    background-attachment: fixed;
+    background-position-x: 25%;
     .button::before{
         border-color: #fff;
     }
 }
 
-.services::before{
-    top: 0;
-    background-image: url('../img/test.jpg');
-    background-attachment: fixed;
-    background-position-x: 25%;
-    // z-index: -1;
-}
+// .services::before{
+//     top: 0;
+    
+//     background-position-x: 25%;
+//     -webkit-transform: translateZ(0);
+//     // z-index: -1;
+// }
 
 
 

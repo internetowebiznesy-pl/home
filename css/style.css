@@ -440,15 +440,12 @@ header::before {
 .services {
   color: #fff;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0); }
-  .services .button::before {
-    border-color: #fff; }
-
-.services::before {
-  top: 0;
+          transform: translate3d(0, 0, 0);
   background-image: url("../img/test.jpg");
   background-attachment: fixed;
   background-position-x: 25%; }
+  .services .button::before {
+    border-color: #fff; }
 
 .strategy:nth-of-type(1) {
   margin-top: 0; }
