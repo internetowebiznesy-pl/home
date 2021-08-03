@@ -53,11 +53,13 @@ a {
   color: #f58220; }
 
 header,
+.services,
 .button,
 .p_box {
   position: relative; }
 
 header::before,
+.services::before,
 .button::before,
 .p_box::before {
   position: absolute;
@@ -134,7 +136,7 @@ input[type=submit] {
 
 .sections {
   padding-top: 60px;
-  padding-bottom: 25px; }
+  padding-bottom: 50px; }
 
 .h1_sections {
   text-transform: uppercase;
@@ -435,8 +437,22 @@ header::before {
   text-align: justify;
   background-color: rgba(0, 0, 0, 0.05); }
 
+.services {
+  color: #fff; }
+  .services .button::before {
+    border-color: #fff; }
+
+.services::before {
+  background-image: url("../img/test.jpg");
+  background-attachment: fixed;
+  background-position-x: 25%; }
+
+.strategy:nth-of-type(1) {
+  margin-top: 0; }
+
 .strategy {
-  padding: 10px 15px; }
+  padding: 10px 15px;
+  margin-top: 30px; }
 
 .p_box::before {
   top: 50%;
