@@ -441,7 +441,7 @@ header::before {
           transform: translate3d(0, 0, 0);
   background-image: url("../img/test.jpg");
   background-attachment: fixed;
-  -webkit-overflow-scrolling: auto;
+  -webkit-overflow-scrolling: touch;
   background-position-x: 25%; }
   .services .button::before {
     border-color: #fff; }
