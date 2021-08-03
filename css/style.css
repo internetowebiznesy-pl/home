@@ -53,13 +53,11 @@ a {
   color: #f58220; }
 
 header,
-.services,
 .button,
 .p_box {
   position: relative; }
 
 header::before,
-.services::before,
 .button::before,
 .p_box::before {
   position: absolute;
@@ -443,7 +441,11 @@ header::before {
           transform: translate3d(0, 0, 0);
   background-image: url("../img/test.jpg");
   background-attachment: fixed;
-  background-position-x: 25%; }
+  background-position-x: 25%;
+  -webkit-transform: translateZ(1px);
+  transform: translateZ(1px);
+  position: relative;
+  z-index: 1; }
   .services .button::before {
     border-color: #fff; }
 
