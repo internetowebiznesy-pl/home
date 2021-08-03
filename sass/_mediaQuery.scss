@@ -1,19 +1,19 @@
-@mixin media($breakpoint){
-    @if $breakpoint == w360 {
+@mixin media($breakpoint360){
+    @if $breakpoint360 == w360 {
         @media only screen and (min-width: 360px) {@content}
-        
+
     };
 };
 
-@mixin media($breakpoint){
-    @if $breakpoint == w480 {
+@mixin media($breakpoint480){
+    @if $breakpoint480 == w480 {
         @media only screen and (min-width: 480px) {@content}
 
     };
 };
 
-@mixin media($breakpoint){
-    @if $breakpoint == w960 {
+@mixin media($breakpoint960){
+    @if $breakpoint960 == w960 {
         @media only screen and (min-width: 960px) {@content}
 
     };

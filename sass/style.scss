@@ -55,7 +55,7 @@ header::before{
     right: 0px;
     
     transform: translateY(-50%);
-    background-size: 80%;
+    background-size: 60%;
     opacity: .2;
 }
 .p_box_strategy_marketing::before{
@@ -192,6 +192,68 @@ input[type=submit]{
 
 @import 'unsite';
 
+
+
+
+
+
+
+
+//// MEDIA 360 //// MEDIA 360 //// MEDIA 360 //// MEDIA 360 //// MEDIA 360 //// MEDIA 360 //// MEDIA 360 //// MEDIA 360 //// MEDIA 360 //// MEDIA 360 //// MEDIA 360
+@mixin media($breakpoint360){
+    @if $breakpoint360 == w360 {
+        @media only screen and (min-width: 360px) {@content}
+
+    };
+};
+
+@include media(w360){
+    .change_display{
+        // display: inline-block;
+    }
+}
+
+
+
+//// MEDIA 480 //// MEDIA 480 //// MEDIA 480 //// MEDIA 480 //// MEDIA 480 //// MEDIA 480 //// MEDIA 480 //// MEDIA 480 //// MEDIA 480 //// MEDIA 480 //// MEDIA 480 
+@mixin media($breakpoint){
+    @if $breakpoint == w480 {
+        @media only screen and (min-width: 480px) {@content}
+
+    };
+};
+
+@include media(w480){
+    .change_display{
+        display: inline-block;
+    }
+}
+
+
+//// MEDIA 568 //// MEDIA 568 //// MEDIA 568 //// MEDIA 568 //// MEDIA 568 //// MEDIA 568 //// MEDIA 568 //// MEDIA 568 //// MEDIA 568 //// MEDIA 568 
+@mixin media($breakpoint){
+    @if $breakpoint == w568 {
+        @media only screen and (min-width: 568px) {@content}
+       
+    };
+};
+
+@include media(w568){
+    $pading_RL_in: 40px;
+    .padding_RL{
+        padding-left: $pading_RL_in;
+        padding-right: $pading_RL_in
+    }
+}
+
+
+@mixin media($breakpoint){
+    @if $breakpoint == w960 {
+        @media only screen and (min-width: 960px) {@content}
+
+    };
+};
+
 @include media(w960){
     .pup,
     #wrapper{
@@ -200,3 +262,5 @@ input[type=submit]{
         margin: auto;
     }
 }
+
+

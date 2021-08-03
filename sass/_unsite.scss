@@ -1,6 +1,10 @@
-.info_graphic_box{
-    padding: $pading_RL_in;
+section.sections{
+    @include paddingTop_underImg()
 }
+
+// .info_graphic_box{
+//     padding: $pading_RL_in;
+// }
 
 .info_graphic_elements{
     @include flex();
