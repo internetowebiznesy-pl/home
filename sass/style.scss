@@ -52,6 +52,16 @@ header::before{
     background-attachment: fixed, scroll;
     // -webkit-overflow-scrolling: touch; //!!
     background-position-x: 25%;
+
+    -webkit-backgound-size: cover;
+    -o-backgound-size: cover;
+    -moz-backgound-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    overflow: auto;
     .button::before{
         border-color: #fff;
     }

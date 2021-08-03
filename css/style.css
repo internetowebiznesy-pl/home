@@ -441,7 +441,16 @@ header::before {
           transform: translate3d(0, 0, 0);
   background-image: url("../img/test.jpg");
   background-attachment: fixed, scroll;
-  background-position-x: 25%; }
+  background-position-x: 25%;
+  -webkit-backgound-size: cover;
+  -o-backgound-size: cover;
+  -moz-backgound-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  overflow: auto; }
   .services .button::before {
     border-color: #fff; }
 
