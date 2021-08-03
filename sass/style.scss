@@ -49,8 +49,8 @@ header::before{
     color: #fff;
     transform: translate3d(0,0,0);
     background-image: url('../img/test.jpg');
-    background-attachment: fixed;
-    -webkit-overflow-scrolling: touch; //!!
+    background-attachment: fixed, scroll;
+    // -webkit-overflow-scrolling: touch; //!!
     background-position-x: 25%;
     .button::before{
         border-color: #fff;
@@ -291,8 +291,12 @@ input[type=submit]{
     .pup,
     #wrapper{
         position: relative;
-        width: 600px;
+        width: 1000px;
         margin: auto;
+    }
+    header{
+        height: 320px;
+        margin-top: 0;
     }
 }
 

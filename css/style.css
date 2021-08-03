@@ -440,8 +440,7 @@ header::before {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   background-image: url("../img/test.jpg");
-  background-attachment: fixed;
-  -webkit-overflow-scrolling: touch;
+  background-attachment: fixed, scroll;
   background-position-x: 25%; }
   .services .button::before {
     border-color: #fff; }
@@ -602,6 +601,9 @@ section.sections {
   .pup,
   #wrapper {
     position: relative;
-    width: 600px;
-    margin: auto; } }
+    width: 1000px;
+    margin: auto; }
+  header {
+    height: 320px;
+    margin-top: 0; } }
 /*# sourceMappingURL=style.css.map */
