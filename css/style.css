@@ -240,7 +240,8 @@ input[type="submit"] {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  color: #000; }
 
 .logo_nav {
   display: -webkit-box;
@@ -402,7 +403,7 @@ header::before {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-size: 60%;
-  opacity: .2; }
+  opacity: .1; }
 
 .p_box_strategy_marketing::before {
   background-image: url("../img/icons/strategie/strategia_marketingowa.png"); }
