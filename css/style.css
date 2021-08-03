@@ -85,12 +85,34 @@ input[type=submit] {
 
 .button::before {
   border: 1px solid #233d4b;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 0, 0, 0.02);
   -webkit-transition: .3s;
-  transition: .3s; }
+  transition: .3s;
+  top: 10px;
+  left: 10px; }
+
+.button.button-left:hover::before {
+  top: 2px;
+  left: 2px; }
+
+.button-right {
+  margin-left: auto; }
+
+.button.button-right::before {
+  top: 10px;
+  left: -10px;
+  margin-left: auto; }
+
+.button.button-right:hover::before {
+  top: 2px;
+  left: -3px; }
+
+.button_inSite {
+  margin-bottom: 30px; }
 
 .button.a-header::before {
   border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.05);
   top: 10px;
   left: -10px; }
 
@@ -186,21 +208,6 @@ input[type=submit] {
   line-height: 28px;
   list-style-type: disc;
   margin-left: 15px; }
-
-.button.button-left::before {
-  top: 10px;
-  left: 10px; }
-
-.button-right {
-  margin-left: auto; }
-
-.button.button-right::before {
-  top: 10px;
-  left: -10px;
-  margin-left: auto; }
-
-.button_inSite {
-  margin-bottom: 30px; }
 
 input,
 textarea {
