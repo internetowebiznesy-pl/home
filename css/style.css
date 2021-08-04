@@ -59,13 +59,15 @@ a {
 header,
 .sections,
 .button,
-.p_box {
+.p_box,
+.box_icon_arrow {
   position: relative; }
 
 header::before,
 .sections::before,
 .button::before,
-.p_box::before {
+.p_box::before,
+.box_icon_arrow::before {
   position: absolute;
   display: block;
   content: '';
@@ -440,15 +442,76 @@ header::before {
 .projects {
   text-align: justify; }
 
-.services {
-  color: #fff; }
-  .services .button::before {
-    border-color: #fff; }
+.box_icons_buttons {
+  margin: 16px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
-.services::before {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  background-image: url("../img/test.jpg"); }
+.box_icon_arrow {
+  width: 50px;
+  height: 50px;
+  overflow: hidden; }
+
+.icon_icon {
+  width: 40px;
+  height: 40px; }
+
+.box_icons_icon {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+@-webkit-keyframes growIcon {
+  0% {
+    width: 40;
+    height: 40px; }
+  20% {
+    width: 40px;
+    height: 40px; }
+  30% {
+    width: 45px;
+    height: 45px; }
+  80% {
+    width: 45px;
+    height: 45px; }
+  81% {
+    width: 40px;
+    height: 40px; }
+  100% {
+    width: 40px;
+    height: 40px; } }
+
+@keyframes growIcon {
+  0% {
+    width: 40;
+    height: 40px; }
+  20% {
+    width: 40px;
+    height: 40px; }
+  30% {
+    width: 45px;
+    height: 45px; }
+  80% {
+    width: 45px;
+    height: 45px; }
+  81% {
+    width: 40px;
+    height: 40px; }
+  100% {
+    width: 40px;
+    height: 40px; } }
+
+.icon_icon {
+  -webkit-animation: growIcon 4s linear infinite;
+          animation: growIcon 4s linear infinite; }
 
 .strategy:nth-of-type(1) {
   margin-top: 0; }
