@@ -140,10 +140,6 @@ input[type=submit] {
   padding-right: 15px;
   padding-left: 15px; }
 
-.sections {
-  padding-top: 60px;
-  padding-bottom: 50px; }
-
 .h1_sections {
   text-transform: uppercase;
   font-size: 20px;
@@ -520,22 +516,8 @@ header::before {
   padding: 10px 15px;
   margin-top: 30px; }
 
-.p_box::before {
-  top: 50%;
-  right: 0px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-size: 60%;
-  opacity: .15; }
-
-.p_box_strategy_marketing::before {
-  background-image: url("../img/icons/strategie/strategia_marketingowa.png"); }
-
-.p_box_strategy_mark::before {
-  background-image: url("../img/icons/strategie/strategia_marki.png"); }
-
-.p_box_strategy_biznes::before {
-  background-image: url("../img/icons/strategie/strategia_biznesowa.png"); }
+.strategy_img {
+  margin-top: 16px; }
 
 .about {
   padding-left: 0;
