@@ -2,7 +2,7 @@
     background-color: #fff;
     @include flex();
     justify-content: space-between;
-    padding: $margin-pupup;
+    padding: $margin-pupup 15px;
     z-index: 100;
     height: $height-nav;
     position: fixed;
@@ -26,7 +26,7 @@
 }
 .h1_nav{
     font-family: lato;
-    font-size: 24px;
+    font-size: 22px;
    
     line-height: 100%;
     margin-left: 10px;

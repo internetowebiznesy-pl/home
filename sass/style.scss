@@ -329,6 +329,38 @@ input[type=submit]{
     // }
 }
 
+//// MEDIA 414 //// MEDIA 414 //// MEDIA 414 //// MEDIA 414 //// MEDIA 414 //// MEDIA 414 //// MEDIA 414 //// MEDIA 414 //// MEDIA 414 //// MEDIA 414 
+
+
+@mixin media($breakpoint414){
+    @if $breakpoint414 == w414 {
+        @media only screen and (min-width: 414px) {@content}
+
+    };
+};
+
+@include media(w414){
+    .pup{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .h1_nav{
+        font-size: 22px;
+    }
+.burger_btn_on.show,
+.burger_btn_off.show{
+    
+    top: $margin-burger-btn;
+    right: 30px
+}
+    .padding_RL{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+}
+
+
 
 
 //// MEDIA 480 //// MEDIA 480 //// MEDIA 480 //// MEDIA 480 //// MEDIA 480 //// MEDIA 480 //// MEDIA 480 //// MEDIA 480 //// MEDIA 480 //// MEDIA 480 //// MEDIA 480 
@@ -346,12 +378,6 @@ input[type=submit]{
     .p_box::before{
         background-size: 50%;
         // left: 20%;
-    }
-
-    $pading_RL_in: 45px;
-    .padding_RL{
-        padding-left: $pading_RL_in;
-        padding-right: $pading_RL_in;
     }
 }
 
