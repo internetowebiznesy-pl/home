@@ -435,7 +435,9 @@ header::before {
   font-weight: 700; }
 
 .services,
-.projects {
+.projects,
+.about,
+.contact {
   text-align: justify; }
 
 .box_icons_buttons {
